@@ -37,6 +37,10 @@ jobs:
       options: --security-opt=no-new-privileges:true --privileged
 
     steps:
+
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
+  
     - name: Install dependencies
       run: |
         apt-get update
