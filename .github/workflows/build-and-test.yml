@@ -19,6 +19,7 @@ jobs:
   build-and-test:
     runs-on: [ubuntu-latest]
     strategy:
+      fail-fast: false
       matrix:
         ubuntu_version: [22.04, 24.04]
     timeout-minutes: 240
