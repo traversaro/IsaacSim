@@ -33,7 +33,7 @@ jobs:
         OMNI_KIT_ALLOW_ROOT: 1
     container:
       image: ubuntu:${{ matrix.ubuntu_version }}
-      options: --gpus all --security-opt=no-new-privileges:true --privileged
+      options: --security-opt=no-new-privileges:true --privileged
 
     steps:
     - name: Install dependencies
